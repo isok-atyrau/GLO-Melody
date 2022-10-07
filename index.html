@@ -74,17 +74,64 @@
                         <button class="counter-button counter-up">
                             <img class="counter-arrow counter-arrow-up" src="./img/arrow.svg" alt="Arrow-up">
                         </button>
-                        <span class="counter">2</span>
+                        <span class="floor-counter counter">2</span>
                         <button class="counter-button counter-down">
                             <img class="counter-arrow counter-arrow-down" src="./img/arrow.svg" alt="Arrow-down">
                         </button>
                     </div>
-                    <button class="button button-primary">Смотреть  квартиры на этаже</button>
+                    <button class="button button-primary view-flats">Смотреть  квартиры на этаже</button>
                 </div>
             </div>
         </div>
         
     </main>
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <button class="modal-close-btn">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L26 26" stroke="#3596F5" stroke-width="3"/>
+                    <path d="M26 2L2 26" stroke="#3596F5" stroke-width="3"/>
+                </svg>
+            </button>
+            <div class="modal-image">
+                <h3 class="modal-title">Этаж <span class="modal-counter counter">7</span></h3>
+                <svg class="flats" width="433" height="408" viewBox="0 0 433 408" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <image id="image0_4_3" width="433" height="408" xlink:href="img/home-plan.png"/>
+                    <path d="M326.054 37H249V131H271V142.5H312L387 140V47V37H326.054Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M317.5 151H266V201H387V168.791V142.5H317.5V151Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M266 201V210.735V251.966H317.5V265.709L387 268V231.112V201H317.5H266Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M269 253V305L296.5 308.5V352.5V370H343V390H404V330.5H387V308.5V253H343H269Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M217 266V275.735V316.966V369.5H264.5H294V309.5H268.5V266H217Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M164.5 273.068V309.417H140V370H187.5H217V309.417L215.5 266H191.5V273.068H164.5Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M121 275H47V349V370H138V326V308.5H165V253H121V275Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M125.729 201H47V275H168L121 272.117V250H165L168 201H125.729Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M125.729 116H47V197H168V144.822H125.729V116Z" fill="#3595F6" fill-opacity="0.75"/>
+                    <path d="M125.729 35H47V116L165 114.5V131H185V90V63.8221V35H125.729Z" fill="#3595F6" fill-opacity="0.75"/>
+                   
+                
+                </svg>
+                    
+                    
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title modal-title-right">Выберите квартиру</h3>
+                <ul class="flat-list">
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 2 комн. 64.5 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 1 комн. 38.9 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 1 комн. 37.9 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 2 комн. 58.0 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 1 комн. 35.8 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 1 комн. 35.8 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 2 комн. 58.4 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 1 комн. 32.4 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 1 комн. 29.9 кв. м.</a></li>
+                    <li class="flat-item"><a href="#" class="flat-link">кв. 40, 2 комн. 75.2 кв. м.</a></li>
+                </ul>
+                <p class="modal-alert">Квартиры, отмеченные серым, уже выкуплены</p>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>

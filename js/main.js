@@ -3,6 +3,9 @@ $(function () {
    var counterUp = $(".counter-up");
    var counterDown = $(".counter-down");
    var currentFloor = 2;
+   var modal = $(".modal");
+   var modalCloseBtn = $(".modal-close-btn");
+   var viewFlats = $(".view-flats");
 
    floorPath.on("mouseover", function () {
       currentFloor = $(this).attr("data-floor");
@@ -10,9 +13,19 @@ $(function () {
       $(".counter").text(currentFloor);
    });
 
+   floorPath.on("click", toggleModal);
+
+   modalCloseBtn.on("click", toggleModal);
+
+   viewFlats.on("click", toggleModal);
+
    function addAndRemoveClass() {
       floorPath.removeClass("current-floor");
       $(`[data-floor=${currentFloor}]`).toggleClass("current-floor");
+   }
+
+   function toggleModal() {
+      modal.toggleClass("is-open");
    }
 
    counterUp.on("click", function () {
